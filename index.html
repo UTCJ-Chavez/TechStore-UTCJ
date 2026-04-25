@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="filter-buttons">
-        <button onclick="filter('todos')">Todos</button>
-        <button onclick="filter('electronica')">Electrónica</button>
-        <button onclick="filter('ropa')">Ropa</button>
-    </div>
-    <div id="productos">
-        <div class="producto electronica">Laptop</div>
-        <div class="producto ropa">Camisa</div>
+    <div class="container">
+        <h1>TechStore</h1>
+        <div class="filter-buttons">
+            <button onclick="filter('todos')">Todos</button>
+            <button onclick="filter('electronica')">Electrónica</button>
+            <button onclick="filter('ropa')">Ropa</button>
+        </div>
+        <div id="productos" class="product-grid">
+            <div class="producto electronica">Laptop</div>
+            <div class="producto ropa">Camisa</div>
+            <div class="producto electronica">Mouse</div>
+            <div class="producto ropa">Pantalón</div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
